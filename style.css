@@ -1,0 +1,208 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f9fc;
+  color: #17243b;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  background: white;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+header h1 {
+  font-size: 27px;
+  font-weight: 900;
+}
+
+header h1 span,
+.hero h2 span {
+  color: #e7aa36;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #44516a;
+  font-size: 14px;
+}
+
+button, .primary, .secondary {
+  cursor: pointer;
+  border: none;
+  padding: 13px 21px;
+  border-radius: 9px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header button, .primary, .publish button {
+  background: #e7aa36;
+  color: #17243b;
+}
+
+.hero {
+  background: #172a46;
+  color: white;
+  padding: 100px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero > div:first-child {
+  max-width: 550px;
+}
+
+.tag {
+  color: #e7aa36;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.hero h2 {
+  font-size: clamp(38px, 6vw, 65px);
+  margin-bottom: 20px;
+}
+
+.hero p {
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: #d3ddec;
+}
+
+.secondary {
+  display: inline-block;
+  border: 1px solid white;
+  color: white;
+  margin-left: 10px;
+}
+
+.hero-image {
+  font-size: 140px;
+  background: #263d5d;
+  padding: 35px;
+  border-radius: 30px;
+}
+
+.books {
+  padding: 75px 8%;
+  text-align: center;
+}
+
+.books h2, .about h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.books > p {
+  color: #738096;
+  margin-bottom: 35px;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.book {
+  background: white;
+  padding: 18px;
+  border-radius: 15px;
+  text-align: left;
+  box-shadow: 0 5px 20px #17243b0d;
+}
+
+.cover {
+  height: 210px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  font-size: 65px;
+  margin-bottom: 18px;
+}
+
+.purple { background: #ddd2f7; }
+.orange { background: #ffdec5; }
+.blue { background: #cce4fa; }
+
+.book h3 {
+  margin-bottom: 8px;
+}
+
+.book p, .about p {
+  color: #738096;
+}
+
+.publish {
+  background: #eaf0f8;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.publish h2 {
+  margin-bottom: 15px;
+}
+
+.publish p {
+  margin-bottom: 25px;
+}
+
+.about {
+  text-align: center;
+  padding: 70px 20px;
+}
+
+footer {
+  background: #172a46;
+  color: white;
+  padding: 40px 8%;
+  text-align: center;
+  line-height: 2;
+}
+
+@media (max-width: 700px) {
+  header {
+    justify-content: center;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 65px 7%;
+  }
+
+  .hero-image {
+    font-size: 90px;
+  }
+
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
+}
