@@ -1,0 +1,89 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #172a46;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  width: 100%;
+  max-width: 430px;
+  padding: 40px;
+  border-radius: 18px;
+}
+
+.logo {
+  display: block;
+  text-align: center;
+  color: #172a46;
+  font-size: 30px;
+  font-weight: 900;
+  text-decoration: none;
+  margin-bottom: 35px;
+}
+
+h1 {
+  color: #172a46;
+  margin-bottom: 12px;
+}
+
+.container > p {
+  color: #788397;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin: 15px 0 8px;
+  font-weight: bold;
+  color: #172a46;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #dce1e9;
+  border-radius: 9px;
+  outline-color: #e7aa36;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background: #e7aa36;
+  border: none;
+  border-radius: 9px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.bottom {
+  text-align: center;
+  margin-top: 25px;
+  color: #64748b;
+}
+
+.bottom a, .back {
+  color: #24568d;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.back {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
